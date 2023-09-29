@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>All Practics</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/landing.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://jqueryvalidation.org/files/lib/jquery.js"></script>
+  <script src="https://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="Calculator with Js\style.css" rel="stylesheet">
+    <script src="Calculator with JS\script.js" defer></script>
+  <link href="Calculator with Js\style.css" rel="stylesheet">
+    <script src="Calculator with JS\script.js" defer></script>
+    
+    <script language="javascript">
+        function addNumbers()
+        {
+                var val1 = parseInt(document.getElementById("value1").value);
+                var val2 = parseInt(document.getElementById("value2").value);
+                var ansD = document.getElementById("answer");
+                ansD.value = val1 + val2;
+        }
+    </script>
+
+  <style type="text/css">
+            .calculator-grid {
+                            display: grid;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 100vh;
+                            grid-template-columns: repeat(4, 100px);
+                            grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+                            }
+            body {
+              margin: 0;
+              padding: 0;
+              background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+              }
+
+              *, *::before, *::after {
+                                box-sizing: border-box;
+                                font-family: Gotham Rounded, sans-serif;
+                                font-weight: normal;
+                                     }
+  </style>
+<body>
+
+   <div class="Calculator-grid" style="border:solid black 1px;">
+         <H1 style="text-align: center;">Calculator</H1>
+               <div class="col-md-3"></div>
+               <div class="col-md-3">
+                           <br><br>
+                        <input type="text" name="value1" class="form-control" id="value1" Placeholder="Enter number" value="" required>
+                        
+               </div>
+
+               <div class="col-md-3">
+                           <br><br>
+                        <input type="text" name="value2" class="form-control" id="value2" Placeholder="Enter number" value="" required>
+                        <br><br>
+                                       <input type="text" name="answer" value="" id="answer">
+                       
+               </div>
+
+               <div class="col-md-3">
+                  <br><br>
+                  <input type="button" name="Submit" style="margin-top: 40px;width: 201px;height: 44px;" value="Submit"onclick="javascript:addNumbers()">
+
+               </div>
+               <br><br>
+
+
+
+
+   </div>
+ 
+
+    
+                                    
+
+              
+</body>
